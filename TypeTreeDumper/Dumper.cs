@@ -93,6 +93,7 @@ namespace TypeTreeDumper
 
             var countPosition = (int)bw.BaseStream.Position;
             var typeCount     = 0;
+            bw.Write((int)0);
 
             Console.WriteLine("Writing runtime types...");
             for (int i = 0; i < engine.RuntimeTypes.Count; i++)
